@@ -1,0 +1,398 @@
+/* CSS style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* positie voor de header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #73bdc4;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+    }
+
+
+/* de grootte van mijn logo */
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.naam-overlay {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger-menu stijlen */
+.menu {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Container voor de algemene layout */
+.content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.font {
+    margin: 20px;
+    text-align: center;
+    color: #070707;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+
+/* Stijlen voor kopteksten */
+h1, h2 {
+    text-align: center;
+    color: #070707;
+    margin-top: 6%;
+}
+
+.contact{
+    margin-top: 0;
+}
+
+/* Stijlen voor paragrafen */
+p {
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Projecten sectie */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Specifieke stijlen voor projectkaarten */
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Link naar GitHub of andere externe pagina */
+.project-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #73bdc4;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #007BFF;
+}
+
+/* Formulier stijlen */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #73bdc4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.over{
+    margin-top: 0;
+}
+/* Algemene stijl voor de downloadknop */
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #73bdc4;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Stijl voor hover-effect */
+.download-button:hover {
+    background-color: #498388;
+}
+
+
+.submit-button:hover {
+    background-color: #007BFF;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #070707;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Zoekbalk styling */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #73bdc4;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #007BFF;
+}
+
+
+
+/* Afbeelding styling */
+.img1 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+
+}
+
+
+/* Back button styling */
+.back-button, .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #73bdc4;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.back-button:hover, .button:hover {
+    background-color: #007BFF;
+}
+
+/* Stijlen voor success en error berichten */
+.success-message {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+}
+
+.error-message {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    border-radius: 5px;
+}
+
+/* Media Queries voor responsiviteit */
+/* Basis stijlen voor de header en navigatie */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #73bdc4;
+    padding: 10px 20px;
+}
+
+h1 {
+    color: #070707;
+}
+
+/* Stijlen voor de navigatie */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hamburger menu stijlen */
+.navbar__toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 4px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Media query voor kleinere schermen */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #73bdc4;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 999;
+    }
+h1{
+    margin-top: 12%;
+}
+    .nav.active {
+        display: flex; /* Toont het menu wanneer het actief is */
+    }
+
+    .navbar__toggle {
+        display: flex; /* Toont de hamburger knop */
+    }
+
+    .font {
+        margin-top: 20px; /* Geeft wat ruimte boven de tekst */
+    }
+
+    /* Stijlen voor het navigatie-menu op mobiele apparaten */
+    .nav a {
+        padding: 15px;
+        border-top: 1px solid #fff;
+    }
+}
+
